@@ -1,0 +1,117 @@
+# Hermes Configuration — Starfleet Example
+# Copy to ~/.hermes/config.yaml and customize
+
+# ── Primary Model ──────────────────────────────────────────────────────────────
+model:
+  default: claude-sonnet-4-5           # Your primary model
+  provider: anthropic                  # openai | anthropic | openrouter | ollama
+
+# ── Agent Behavior ─────────────────────────────────────────────────────────────
+agent:
+  max_turns: 60
+  reasoning_effort: medium             # low | medium | high
+  tool_use_enforcement: auto
+
+# ── Delegation (Sub-agent orchestration) ──────────────────────────────────────
+# The delegation model is used when the orchestrator spawns crew members.
+# Recommend: a capable model that can follow complex instructions.
+delegation:
+  model: claude-sonnet-4-5             # Model for delegated crew agents
+  provider: anthropic
+  max_iterations: 50
+  reasoning_effort: medium
+  default_toolsets:
+    - terminal
+    - file
+    - web
+
+# ── Platform Toolsets ──────────────────────────────────────────────────────────
+# Which toolsets are available per platform.
+# Keep delegates least-privilege — they get what they need, not everything.
+platform_toolsets:
+  cli:
+    - hermes-cli
+  telegram:
+    - hermes-telegram
+  discord:
+    - hermes-discord
+
+# ── Memory ─────────────────────────────────────────────────────────────────────
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 2200
+  user_char_limit: 1375
+  nudge_interval: 10                   # Remind agent to save memories every N turns
+  flush_min_turns: 6
+
+# ── Context / Compression ─────────────────────────────────────────────────────
+context:
+  engine: compressor
+
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2
+  protect_last_n: 20                   # Protect last N messages from compression
+
+# ── Display ────────────────────────────────────────────────────────────────────
+display:
+  compact: false
+  personality: default                 # See personalities section below
+  streaming: true
+  inline_diffs: true
+  show_cost: false
+
+# ── Personalities (Optional) ──────────────────────────────────────────────────
+# Quick-switch response styles. Activate with /personality <name>
+agent:
+  personalities:
+    default: You are a helpful, professional AI assistant.
+    concise: You are a concise assistant. Keep responses brief and to the point.
+    technical: You are a technical expert. Provide detailed, accurate technical information.
+    # Add your own persona variants here
+
+# ── Security ───────────────────────────────────────────────────────────────────
+security:
+  redact_secrets: true
+  tirith_enabled: true                 # Policy engine for tool call validation
+
+# ── Approvals ─────────────────────────────────────────────────────────────────
+approvals:
+  mode: manual                         # manual | auto | deny
+  timeout: 60                          # Seconds before approval times out
+  cron_mode: deny                      # Deny all approvals in scheduled runs
+
+# ── Terminal ───────────────────────────────────────────────────────────────────
+terminal:
+  backend: local
+  timeout: 180
+  persistent_shell: true
+
+# ── Skills ─────────────────────────────────────────────────────────────────────
+skills:
+  external_dirs: []                    # Add paths to external skill directories
+
+# ── Session Management ─────────────────────────────────────────────────────────
+session_reset:
+  mode: both                           # idle | scheduled | both
+  idle_minutes: 1440                   # Reset after 24h idle
+  at_hour: 4                           # Scheduled reset at 4 AM
+
+# ── Checkpoints ────────────────────────────────────────────────────────────────
+checkpoints:
+  enabled: true
+  max_snapshots: 50
+
+# ── Logging ────────────────────────────────────────────────────────────────────
+logging:
+  level: INFO
+  max_size_mb: 5
+  backup_count: 3
+
+# ── Notes ─────────────────────────────────────────────────────────────────────
+# Crew skill definitions live in: ~/.hermes/skills/crew/
+# Each crew member is a subdirectory with a SKILL.md file.
+# The SOUL.md defines your primary persona.
+# See: hermes/skills/crew/ in this repo for templates and examples.
