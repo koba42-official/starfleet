@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+
+    <!-- Space background -->
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#030510"/>
+      <stop offset="45%"  stop-color="#08102a"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+
+    <!-- Nebula glow clouds -->
+    <radialGradient id="neb1" cx="18%" cy="52%" r="48%">
+      <stop offset="0%"   stop-color="#182a99" stop-opacity="0.38"/>
+      <stop offset="55%"  stop-color="#091a5e" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#030510" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neb2" cx="78%" cy="38%" r="42%">
+      <stop offset="0%"   stop-color="#0d506e" stop-opacity="0.26"/>
+      <stop offset="65%"  stop-color="#042a4c" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#030510" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neb3" cx="52%" cy="72%" r="32%">
+      <stop offset="0%"   stop-color="#2e1b6e" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#030510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Delta fill gradient (gold) -->
+    <linearGradient id="deltaFill" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%"   stop-color="#ffe566"/>
+      <stop offset="45%"  stop-color="#ffc107"/>
+      <stop offset="100%" stop-color="#e07800"/>
+    </linearGradient>
+
+    <!-- Delta ambient halo -->
+    <radialGradient id="deltaHalo" cx="50%" cy="48%" r="50%">
+      <stop offset="0%"   stop-color="#ffc107" stop-opacity="0.42"/>
+      <stop offset="55%"  stop-color="#ffc107" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffc107" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow filter — delta -->
+    <filter id="dGlow" x="-40%" y="-25%" width="180%" height="150%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glow filter — main title -->
+    <filter id="tGlow" x="-8%" y="-40%" width="116%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- ═══════════════════ BACKGROUND ═══════════════════ -->
+  <rect width="1200" height="400" fill="url(#spaceBg)"/>
+  <rect width="1200" height="400" fill="url(#neb1)"/>
+  <rect width="1200" height="400" fill="url(#neb2)"/>
+  <rect width="1200" height="400" fill="url(#neb3)"/>
+
+  <!-- ═══════════════════ SCAN LINES ═══════════════════ -->
+  <line x1="0" y1="80"  x2="1200" y2="80"  stroke="#26d0ce" stroke-width="0.4" opacity="0.07"/>
+  <line x1="0" y1="160" x2="1200" y2="160" stroke="#26d0ce" stroke-width="0.4" opacity="0.05"/>
+  <line x1="0" y1="240" x2="1200" y2="240" stroke="#26d0ce" stroke-width="0.4" opacity="0.05"/>
+  <line x1="0" y1="320" x2="1200" y2="320" stroke="#26d0ce" stroke-width="0.4" opacity="0.07"/>
+
+  <!-- ═══════════════════ CORNER ACCENTS ═══════════════════ -->
+  <polyline points="0,55 0,0 65,0"  fill="none" stroke="#26d0ce" stroke-width="1.2" opacity="0.45"/>
+  <polyline points="1135,0 1200,0 1200,55"  fill="none" stroke="#26d0ce" stroke-width="1.2" opacity="0.45"/>
+  <polyline points="0,345 0,400 65,400"  fill="none" stroke="#26d0ce" stroke-width="1.2" opacity="0.45"/>
+  <polyline points="1135,400 1200,400 1200,345"  fill="none" stroke="#26d0ce" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- ═══════════════════ STARS ═══════════════════ -->
+  <!-- Top-left -->
+  <circle cx="28"  cy="22"  r="0.8" fill="white" opacity="0.70"/>
+  <circle cx="78"  cy="44"  r="1.3" fill="white" opacity="0.88"/>
+  <circle cx="118" cy="13"  r="0.6" fill="white" opacity="0.50"/>
+  <circle cx="158" cy="68"  r="1.5" fill="white" opacity="0.82"/>
+  <circle cx="218" cy="28"  r="0.8" fill="white" opacity="0.60"/>
+  <circle cx="278" cy="52"  r="1.0" fill="white" opacity="0.72"/>
+  <circle cx="348" cy="18"  r="0.6" fill="white" opacity="0.42"/>
+  <circle cx="408" cy="76"  r="1.2" fill="white" opacity="0.80"/>
+  <circle cx="468" cy="33"  r="0.8" fill="white" opacity="0.62"/>
+  <circle cx="528" cy="62"  r="1.0" fill="white" opacity="0.68"/>
+  <circle cx="44"  cy="118" r="1.0" fill="white" opacity="0.60"/>
+  <circle cx="88"  cy="138" r="0.7" fill="white" opacity="0.48"/>
+  <circle cx="148" cy="98"  r="1.3" fill="white" opacity="0.75"/>
+  <circle cx="258" cy="112" r="0.6" fill="white" opacity="0.40"/>
+  <circle cx="318" cy="142" r="1.1" fill="white" opacity="0.68"/>
+  <circle cx="388" cy="122" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="448" cy="158" r="1.4" fill="white" opacity="0.84"/>
+  <circle cx="508" cy="108" r="0.7" fill="white" opacity="0.48"/>
+  <circle cx="568" cy="138" r="0.9" fill="white" opacity="0.64"/>
+  <!-- Top-right -->
+  <circle cx="638" cy="28"  r="1.1" fill="white" opacity="0.74"/>
+  <circle cx="698" cy="58"  r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="758" cy="22"  r="1.4" fill="white" opacity="0.84"/>
+  <circle cx="818" cy="52"  r="0.8" fill="white" opacity="0.60"/>
+  <circle cx="878" cy="38"  r="1.0" fill="white" opacity="0.70"/>
+  <circle cx="938" cy="68"  r="0.6" fill="white" opacity="0.44"/>
+  <circle cx="998" cy="28"  r="1.3" fill="white" opacity="0.80"/>
+  <circle cx="1058" cy="52" r="0.8" fill="white" opacity="0.60"/>
+  <circle cx="1118" cy="18" r="1.0" fill="white" opacity="0.70"/>
+  <circle cx="1172" cy="44" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="618" cy="118" r="0.9" fill="white" opacity="0.62"/>
+  <circle cx="678" cy="142" r="1.2" fill="white" opacity="0.78"/>
+  <circle cx="738" cy="108" r="0.6" fill="white" opacity="0.44"/>
+  <circle cx="798" cy="138" r="1.0" fill="white" opacity="0.68"/>
+  <circle cx="858" cy="122" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="918" cy="152" r="1.3" fill="white" opacity="0.78"/>
+  <circle cx="978" cy="112" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="1038" cy="138" r="1.1" fill="white" opacity="0.74"/>
+  <circle cx="1098" cy="98"  r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="1152" cy="128" r="1.5" fill="white" opacity="0.88"/>
+  <!-- Bottom-left -->
+  <circle cx="24"  cy="248" r="1.0" fill="white" opacity="0.62"/>
+  <circle cx="68"  cy="278" r="0.7" fill="white" opacity="0.48"/>
+  <circle cx="128" cy="238" r="1.2" fill="white" opacity="0.74"/>
+  <circle cx="188" cy="268" r="0.8" fill="white" opacity="0.54"/>
+  <circle cx="248" cy="252" r="1.4" fill="white" opacity="0.80"/>
+  <circle cx="308" cy="282" r="0.6" fill="white" opacity="0.44"/>
+  <circle cx="368" cy="262" r="1.0" fill="white" opacity="0.68"/>
+  <circle cx="428" cy="278" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="488" cy="248" r="1.3" fill="white" opacity="0.78"/>
+  <circle cx="548" cy="272" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="38"  cy="328" r="0.9" fill="white" opacity="0.58"/>
+  <circle cx="92"  cy="352" r="1.1" fill="white" opacity="0.74"/>
+  <circle cx="152" cy="322" r="0.6" fill="white" opacity="0.44"/>
+  <circle cx="212" cy="348" r="1.3" fill="white" opacity="0.78"/>
+  <circle cx="272" cy="338" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="332" cy="358" r="1.0" fill="white" opacity="0.64"/>
+  <circle cx="392" cy="328" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="452" cy="352" r="1.4" fill="white" opacity="0.84"/>
+  <circle cx="512" cy="332" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="568" cy="348" r="1.1" fill="white" opacity="0.74"/>
+  <!-- Bottom-right -->
+  <circle cx="628" cy="258" r="1.0" fill="white" opacity="0.64"/>
+  <circle cx="688" cy="282" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="748" cy="248" r="1.3" fill="white" opacity="0.78"/>
+  <circle cx="808" cy="268" r="0.8" fill="white" opacity="0.60"/>
+  <circle cx="868" cy="262" r="1.1" fill="white" opacity="0.74"/>
+  <circle cx="928" cy="282" r="0.6" fill="white" opacity="0.44"/>
+  <circle cx="988" cy="252" r="1.4" fill="white" opacity="0.84"/>
+  <circle cx="1048" cy="272" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="1108" cy="262" r="1.0" fill="white" opacity="0.68"/>
+  <circle cx="1162" cy="282" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="612" cy="338" r="0.9" fill="white" opacity="0.58"/>
+  <circle cx="672" cy="358" r="1.2" fill="white" opacity="0.78"/>
+  <circle cx="732" cy="328" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="792" cy="352" r="1.0" fill="white" opacity="0.68"/>
+  <circle cx="852" cy="338" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="912" cy="362" r="1.3" fill="white" opacity="0.78"/>
+  <circle cx="972" cy="332" r="0.7" fill="white" opacity="0.50"/>
+  <circle cx="1032" cy="358" r="1.1" fill="white" opacity="0.74"/>
+  <circle cx="1092" cy="328" r="0.8" fill="white" opacity="0.58"/>
+  <circle cx="1152" cy="348" r="1.5" fill="white" opacity="0.88"/>
+
+  <!-- ═══════════════════ DELTA SYMBOL ═══════════════════ -->
+
+  <!-- Ambient halo behind delta -->
+  <ellipse cx="170" cy="205" rx="108" ry="128" fill="url(#deltaHalo)"/>
+
+  <!-- Shadow layer (offset, dark) -->
+  <path d="M 173,79 L 259,330 L 173,277 L 89,330 Z"
+        fill="#7a4000" opacity="0.28" transform="translate(4,5)"/>
+
+  <!-- Main delta (gold, glowing) -->
+  <path d="M 170,75 L 256,328 L 170,274 L 86,328 Z"
+        fill="url(#deltaFill)" filter="url(#dGlow)"/>
+
+  <!-- Shadow face — left half toned darker for depth -->
+  <path d="M 170,75 L 170,274 L 86,328 Z"
+        fill="#a85c00" opacity="0.30"/>
+
+  <!-- Highlight face — right half slightly lighter -->
+  <path d="M 170,75 L 256,328 L 170,274 Z"
+        fill="#fff5cc" opacity="0.10"/>
+
+  <!-- Center groove line -->
+  <line x1="170" y1="88" x2="170" y2="272"
+        stroke="#7a4000" stroke-width="1.5" opacity="0.45"/>
+
+  <!-- ═══════════════════ DIVIDER ═══════════════════ -->
+  <line x1="330" y1="55"  x2="330" y2="345"
+        stroke="#26d0ce" stroke-width="0.8" opacity="0.22"/>
+
+  <!-- Tick marks on divider -->
+  <line x1="325" y1="80"  x2="335" y2="80"  stroke="#26d0ce" stroke-width="0.8" opacity="0.35"/>
+  <line x1="325" y1="200" x2="335" y2="200" stroke="#26d0ce" stroke-width="0.8" opacity="0.35"/>
+  <line x1="325" y1="320" x2="335" y2="320" stroke="#26d0ce" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- ═══════════════════ TEXT ═══════════════════ -->
+
+  <!-- Eyebrow label -->
+  <text x="760" y="128"
+        font-family="'Courier New', Courier, monospace"
+        font-size="11" font-weight="400"
+        fill="#26d0ce" text-anchor="middle" letter-spacing="5"
+        opacity="0.80">KOBA42  ·  OPEN SOURCE FRAMEWORK</text>
+
+  <!-- Main title -->
+  <text x="760" y="220"
+        font-family="'Courier New', Courier, monospace"
+        font-size="80" font-weight="700"
+        fill="white" text-anchor="middle" letter-spacing="12"
+        filter="url(#tGlow)">STARFLEET</text>
+
+  <!-- Tagline -->
+  <text x="760" y="268"
+        font-family="'Courier New', Courier, monospace"
+        font-size="15" font-weight="400"
+        fill="#26d0ce" text-anchor="middle" letter-spacing="3"
+        opacity="0.88">Build your AI crew  ·  Structure your intelligence</text>
+
+  <!-- Thin rule -->
+  <line x1="430" y1="294" x2="1090" y2="294"
+        stroke="#26d0ce" stroke-width="0.5" opacity="0.28"/>
+
+  <!-- Stats row -->
+  <text x="515" y="320"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10" fill="#26d0ce" text-anchor="middle" letter-spacing="2"
+        opacity="0.60">7 DEPARTMENTS</text>
+  <circle cx="607" cy="317" r="1.5" fill="#26d0ce" opacity="0.38"/>
+  <text x="700" y="320"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10" fill="#26d0ce" text-anchor="middle" letter-spacing="2"
+        opacity="0.60">MULTI-AGENT</text>
+  <circle cx="793" cy="317" r="1.5" fill="#26d0ce" opacity="0.38"/>
+  <text x="888" y="320"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10" fill="#26d0ce" text-anchor="middle" letter-spacing="2"
+        opacity="0.60">GATE-ENFORCED QA</text>
+  <circle cx="983" cy="317" r="1.5" fill="#26d0ce" opacity="0.38"/>
+  <text x="1072" y="320"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10" fill="#26d0ce" text-anchor="middle" letter-spacing="2"
+        opacity="0.60">MIT LICENSE</text>
+
+  <!-- Bottom tag -->
+  <text x="760" y="362"
+        font-family="'Courier New', Courier, monospace"
+        font-size="9" fill="white" text-anchor="middle" letter-spacing="4"
+        opacity="0.22">— ENGAGE —</text>
+
+</svg>
