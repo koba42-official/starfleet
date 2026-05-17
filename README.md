@@ -39,6 +39,12 @@ This repository gives you the scaffold. The concepts, the department structure, 
 
 ## The Architecture
 
+<div align="center">
+  <img src="assets/starfleet-architecture.svg" alt="Starfleet Agent Control Room — crew topology, gate pipeline, model tiering" width="720">
+</div>
+
+<br>
+
 ### The Command Hierarchy
 
 ```
