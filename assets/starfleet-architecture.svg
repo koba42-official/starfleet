@@ -1,0 +1,524 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1820" width="900" height="1820">
+<defs>
+
+  <linearGradient id="bgG" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#040918"/>
+    <stop offset="50%"  stop-color="#060c20"/>
+    <stop offset="100%" stop-color="#030710"/>
+  </linearGradient>
+  <linearGradient id="hdrG" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"  stop-color="#061230"/>
+    <stop offset="50%" stop-color="#040e24"/>
+    <stop offset="100%" stop-color="#061230"/>
+  </linearGradient>
+
+  <filter id="gT" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gS" x="-15%" y="-25%" width="130%" height="150%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <marker id="aT" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0,8 3,0 6" fill="#00e5cc"/>
+  </marker>
+  <marker id="aG" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0,8 3,0 6" fill="#ffd700"/>
+  </marker>
+  <marker id="aW" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0,8 3,0 6" fill="#ffffff" opacity="0.5"/>
+  </marker>
+
+</defs>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  BACKGROUND                                -->
+<!-- ═══════════════════════════════════════════ -->
+<rect width="900" height="1820" fill="url(#bgG)"/>
+
+<!-- subtle dot grid -->
+<pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+  <circle cx="15" cy="15" r="0.6" fill="#00e5cc" opacity="0.06"/>
+</pattern>
+<rect width="900" height="1820" fill="url(#dots)"/>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  HEADER BAR  y=0-46                        -->
+<!-- ═══════════════════════════════════════════ -->
+<rect width="900" height="46" fill="url(#hdrG)"/>
+<rect y="45" width="900" height="1.5" fill="#00e5cc" opacity="0.55"/>
+<text x="22" y="29" font-family="'Courier New',Courier,monospace" font-size="11" font-weight="700" fill="#00e5cc" letter-spacing="3">STARFLEET AGENT CONTROL ROOM</text>
+<text x="878" y="29" font-family="'Courier New',Courier,monospace" font-size="11" font-weight="700" fill="#00e5cc" letter-spacing="2" text-anchor="end">HERMES + CLAUDE CODE EDITION</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  TITLE BLOCK  y=46-188                     -->
+<!-- ═══════════════════════════════════════════ -->
+<!-- flanking delta symbols -->
+<path d="M 70,68 L 106,160 L 70,138 L 34,160 Z"  fill="#ffd700" opacity="0.75" filter="url(#gS)"/>
+<path d="M 830,68 L 866,160 L 830,138 L 794,160 Z" fill="#ffd700" opacity="0.75" filter="url(#gS)"/>
+
+<text x="450" y="84" font-family="'Courier New',Courier,monospace" font-size="11" fill="#7090a0" text-anchor="middle" letter-spacing="5">HOW TO OPERATE YOUR</text>
+
+<!-- STARFLEET — gold, chunky -->
+<text x="450" y="140"
+      font-family="'Courier New',Courier,monospace"
+      font-size="62" font-weight="700"
+      text-anchor="middle" letter-spacing="8"
+      stroke="#ffd700" stroke-width="3" paint-order="stroke"
+      fill="#ffd700" filter="url(#gT)">STARFLEET</text>
+
+<!-- AI CREW — teal -->
+<text x="450" y="183"
+      font-family="'Courier New',Courier,monospace"
+      font-size="42" font-weight="700"
+      text-anchor="middle" letter-spacing="6"
+      stroke="#00e5cc" stroke-width="2" paint-order="stroke"
+      fill="#00e5cc" filter="url(#gT)">AI CREW</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SUBTITLE BAR  y=188-232                   -->
+<!-- ═══════════════════════════════════════════ -->
+<rect y="188" width="900" height="44" fill="#040d1e" opacity="0.9"/>
+<rect y="188" width="900" height="1.5" fill="#00e5cc" opacity="0.4"/>
+<rect y="231" width="900" height="1.5" fill="#00e5cc" opacity="0.4"/>
+<text x="450" y="215" font-family="'Courier New',Courier,monospace" font-size="10" fill="#00e5cc" text-anchor="middle" letter-spacing="3">ONE ORCHESTRATOR  ·  SEVEN DEPARTMENTS  ·  FIVE GATES  ·  ZERO GUESSWORK</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  CONCEPT FORMULA  y=232-330                -->
+<!-- ═══════════════════════════════════════════ -->
+<!-- left box: SOUL = CAPTAIN -->
+<rect x="20" y="244" width="415" height="78" fill="#05101e" stroke="#ffd700" stroke-width="2"/>
+<rect x="20" y="244" width="415" height="22" fill="#0d1600"/>
+<text x="227" y="260" font-family="'Courier New',Courier,monospace" font-size="9" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="4">SOUL.md  =  THE CAPTAIN</text>
+<text x="227" y="284" font-family="'Courier New',Courier,monospace" font-size="19" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">CAPTAIN JEAN-LUC PICARD</text>
+<text x="227" y="305" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" text-anchor="middle" letter-spacing="2">persona  ·  voice  ·  principles  ·  continuity</text>
+<!-- right box: CREW = DEPARTMENTS -->
+<rect x="465" y="244" width="415" height="78" fill="#050e18" stroke="#00e5cc" stroke-width="2"/>
+<rect x="465" y="244" width="415" height="22" fill="#051418"/>
+<text x="672" y="260" font-family="'Courier New',Courier,monospace" font-size="9" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="4">CREW SKILLS  =  THE DEPARTMENTS</text>
+<text x="672" y="284" font-family="'Courier New',Courier,monospace" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">~/.hermes/skills/crew/</text>
+<text x="672" y="305" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" text-anchor="middle" letter-spacing="2">30+ specialists  ·  7 departments  ·  isolated by design</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  ARCHITECTURE DIAGRAM  y=332-690           -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="20" y1="332" x2="880" y2="332" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+<text x="22" y="348" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" letter-spacing="3">THREE WAYS YOU INTERACT WITH THE CREW</text>
+<line x1="20" y1="352" x2="880" y2="352" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+
+<!-- YOU box -->
+<rect x="380" y="362" width="140" height="50" rx="3" fill="#08162a" stroke="#ffd700" stroke-width="2.5" filter="url(#gS)"/>
+<text x="450" y="383" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" text-anchor="middle" letter-spacing="3">STARFLEET COMMAND</text>
+<text x="450" y="401" font-family="'Courier New',Courier,monospace" font-size="16" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="3">YOU</text>
+
+<!-- trunk from YOU down to junction -->
+<line x1="450" y1="412" x2="450" y2="440" stroke="#ffd700" stroke-width="1.5" opacity="0.7"/>
+<!-- horizontal rail -->
+<line x1="135" y1="440" x2="765" y2="440" stroke="#ffd700" stroke-width="1" opacity="0.35"/>
+<!-- left branch (dashed, dim) -->
+<line x1="135" y1="440" x2="135" y2="488" stroke="#aabbcc" stroke-width="1.2" opacity="0.4" stroke-dasharray="5,3" marker-end="url(#aW)"/>
+<!-- center branch -->
+<line x1="450" y1="440" x2="450" y2="488" stroke="#ffd700" stroke-width="2" marker-end="url(#aG)"/>
+<!-- right branch (dashed, teal) -->
+<line x1="765" y1="440" x2="765" y2="488" stroke="#00e5cc" stroke-width="1.5" opacity="0.7" stroke-dasharray="5,3" marker-end="url(#aT)"/>
+
+<!-- path labels -->
+<text x="135" y="470" font-family="'Courier New',Courier,monospace" font-size="8" fill="#aabbcc" text-anchor="middle" opacity="0.55" letter-spacing="1">control path</text>
+<text x="450" y="470" font-family="'Courier New',Courier,monospace" font-size="8" fill="#ffd700" text-anchor="middle" letter-spacing="1">orchestrated path</text>
+<text x="765" y="470" font-family="'Courier New',Courier,monospace" font-size="8" fill="#00e5cc" text-anchor="middle" letter-spacing="1">direct path</text>
+
+<!-- LEFT BOX: Control Room -->
+<rect x="20" y="490" width="230" height="120" fill="#05101a" stroke="#aabbcc" stroke-width="1.2" opacity="0.7"/>
+<rect x="20" y="490" width="230" height="22" fill="#0a1220"/>
+<text x="135" y="506" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#aabbcc" text-anchor="middle" letter-spacing="2">CONTROL ROOM</text>
+<text x="135" y="521" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle">~/.hermes/  ·  .claude/</text>
+<text x="135" y="539" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">· add / rotate crew agents</text>
+<text x="135" y="553" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">· update SOUL.md</text>
+<text x="135" y="567" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">· manage crew skills</text>
+<text x="135" y="581" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">· check ports · backups</text>
+<text x="135" y="602" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle" font-style="italic">You manage the fleet.</text>
+
+<!-- CENTER BOX: Hermes Orchestrator -->
+<rect x="325" y="490" width="250" height="120" fill="#0a1628" stroke="#ffd700" stroke-width="2.5" filter="url(#gS)"/>
+<rect x="325" y="490" width="250" height="22" fill="#101c08"/>
+<!-- robot icon -->
+<rect x="436" y="515" width="28" height="20" rx="2" fill="#060e1a" stroke="#ffd700" stroke-width="1.5"/>
+<rect x="440" y="519" width="7"  height="5" fill="#ffd700"/>
+<rect x="453" y="519" width="7"  height="5" fill="#ffd700"/>
+<rect x="442" y="527" width="16" height="2.5" fill="#ffd700" opacity="0.55"/>
+<line x1="450" y1="515" x2="450" y2="509" stroke="#ffd700" stroke-width="1.5"/>
+<circle cx="450" cy="507" r="2.5" fill="#ffd700"/>
+<!-- label -->
+<text x="450" y="505" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="2">HERMES ORCHESTRATOR</text>
+<text x="450" y="545" font-family="'Courier New',Courier,monospace" font-size="8" fill="#ffd700" text-anchor="middle" letter-spacing="1">ADM. NECHAYEV  /  ALINA NASH</text>
+<text x="450" y="559" font-family="'Courier New',Courier,monospace" font-size="8" fill="#aabbcc" text-anchor="middle">routes · delegates · synthesizes</text>
+<text x="450" y="572" font-family="'Courier New',Courier,monospace" font-size="8" fill="#aabbcc" text-anchor="middle">one front door for the fleet</text>
+<text x="450" y="590" font-family="'Courier New',Courier,monospace" font-size="8" fill="#ffd700" text-anchor="middle" letter-spacing="1">↓  delegates to crew  ↓</text>
+<text x="450" y="603" font-family="'Courier New',Courier,monospace" font-size="7" fill="#506070" text-anchor="middle" font-style="italic">best for complex multi-dept work</text>
+
+<!-- RIGHT BOX: Specialist Agents -->
+<rect x="650" y="490" width="230" height="120" fill="#05101a" stroke="#00e5cc" stroke-width="1.5"/>
+<rect x="650" y="490" width="230" height="22" fill="#051420"/>
+<text x="765" y="506" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="2">SPECIALIST AGENTS</text>
+<text x="765" y="521" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle">skills/crew/  ·  .claude/agents/</text>
+<text x="765" y="539" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">eng · design · mkt · ops</text>
+<text x="765" y="553" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">qa · legal · analytics</text>
+<text x="765" y="567" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">talk to any crew member directly</text>
+<text x="765" y="581" font-family="'Courier New',Courier,monospace" font-size="9" fill="#8090a0" text-anchor="middle">no routing overhead</text>
+<text x="765" y="602" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle" font-style="italic">best when you know who to call.</text>
+
+<!-- orchestrator → crew task bus -->
+<line x1="450" y1="610" x2="450" y2="635" stroke="#ffd700" stroke-width="1.5" marker-end="url(#aG)"/>
+
+<!-- CREW TASK BUS -->
+<rect x="325" y="636" width="250" height="44" fill="#040c18" stroke="#ffd700" stroke-width="1" opacity="0.7"/>
+<text x="450" y="652" font-family="'Courier New',Courier,monospace" font-size="9" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="2">CREW TASK BUS</text>
+<text x="370" y="670" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle">inbox</text>
+<text x="415" y="670" font-family="'Courier New',Courier,monospace" font-size="9" fill="#ffd700">→</text>
+<text x="450" y="670" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle">working</text>
+<text x="487" y="670" font-family="'Courier New',Courier,monospace" font-size="9" fill="#ffd700">→</text>
+<text x="530" y="670" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070" text-anchor="middle">outbox</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  CREW ROSTER  y=692-1075                   -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="20" y1="692" x2="880" y2="692" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+<text x="22" y="708" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" letter-spacing="3">THE STARFLEET CREW  —  7 DEPARTMENTS  ·  30+ SPECIALISTS</text>
+<line x1="20" y1="712" x2="880" y2="712" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+
+<!-- ───── ROW 1: COMMAND · ENGINEERING · DESIGN · MARKETING ───── -->
+
+<!-- COMMAND (GOLD) x=20 w=200 -->
+<rect x="20" y="720" width="200" height="175" fill="#070e04" stroke="#ffd700" stroke-width="2"/>
+<rect x="20" y="720" width="200" height="23" fill="#111600"/>
+<text x="120" y="736" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="3">COMMAND</text>
+
+<text x="30" y="759" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ffd700" font-weight="700">▲ ADM. NECHAYEV</text>
+<text x="30" y="771" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">  Alina Nash  ·  Orchestrator</text>
+<line x1="30" y1="777" x2="210" y2="777" stroke="#ffd700" stroke-width="0.5" opacity="0.25"/>
+
+<text x="30" y="791" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ffd700" font-weight="700">▲ CMDR. SHELBY</text>
+<text x="30" y="803" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">  Elizabeth Shelby  ·  PM</text>
+<line x1="30" y1="809" x2="210" y2="809" stroke="#ffd700" stroke-width="0.5" opacity="0.25"/>
+
+<text x="30" y="823" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ffd700" font-weight="700">▲ COUNSELOR TROI</text>
+<text x="30" y="835" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">  Diana Torres  ·  Trust Arch.</text>
+<line x1="30" y1="841" x2="210" y2="841" stroke="#ffd700" stroke-width="0.5" opacity="0.25"/>
+
+<text x="120" y="870" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#ffd700" text-anchor="middle" letter-spacing="1">TIER A · claude-opus</text>
+<text x="120" y="882" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070" text-anchor="middle">strategic · high stakes</text>
+
+<!-- ENGINEERING (TEAL) x=228 w=200 -->
+<rect x="228" y="720" width="200" height="175" fill="#04100e" stroke="#00e5cc" stroke-width="2"/>
+<rect x="228" y="720" width="200" height="23" fill="#051414"/>
+<text x="328" y="736" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="2">ENGINEERING</text>
+
+<text x="238" y="757" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#00e5cc" font-weight="700">▲ LA FORGE</text>
+<text x="238" y="768" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Jordan LaForge  ·  Backend</text>
+<text x="238" y="781" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#00e5cc" font-weight="700">▲ DR. BRAHMS</text>
+<text x="238" y="792" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Leah Brahms  ·  Senior Dev</text>
+<text x="238" y="805" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#00e5cc" font-weight="700">▲ CHIEF O'BRIEN</text>
+<text x="238" y="816" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Miles Brennan  ·  DevOps</text>
+<text x="238" y="829" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#00e5cc" font-weight="700">▲ ENS. CRUSHER</text>
+<text x="238" y="840" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Wes Chandler  ·  Mobile</text>
+<text x="238" y="853" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#00e5cc" font-weight="700">▲ LT. DATA</text>
+<text x="238" y="864" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Adrian Reis  ·  AI Engineer</text>
+<text x="238" y="877" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#00e5cc" font-weight="700">▲ LT. BARCLAY</text>
+<text x="238" y="888" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Reg Hartley  ·  Prototyper</text>
+
+<!-- DESIGN (PURPLE) x=436 w=200 -->
+<rect x="436" y="720" width="200" height="175" fill="#080616" stroke="#cc66ff" stroke-width="2"/>
+<rect x="436" y="720" width="200" height="23" fill="#0d0820"/>
+<text x="536" y="736" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#cc66ff" text-anchor="middle" letter-spacing="3">DESIGN</text>
+
+<text x="446" y="759" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#cc66ff" font-weight="700">▲ DR. SOONG</text>
+<text x="446" y="771" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">  Nolan Song</text>
+<text x="446" y="782" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#8090a0">  UX Architect</text>
+<line x1="446" y1="789" x2="626" y2="789" stroke="#cc66ff" stroke-width="0.5" opacity="0.25"/>
+
+<text x="446" y="803" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#cc66ff" font-weight="700">▲ LT. CDR. DAREN</text>
+<text x="446" y="815" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">  Nella Darren</text>
+<text x="446" y="826" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#8090a0">  UI Designer</text>
+<line x1="446" y1="833" x2="626" y2="833" stroke="#cc66ff" stroke-width="0.5" opacity="0.25"/>
+
+<text x="446" y="847" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#cc66ff" font-weight="700">▲ AMB. SAREK</text>
+<text x="446" y="859" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">  Samuel Karev</text>
+<text x="446" y="870" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#8090a0">  UX Researcher</text>
+<text x="536" y="888" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#cc66ff" text-anchor="middle">design → dev handoff</text>
+
+<!-- MARKETING (ORANGE) x=644 w=236 -->
+<rect x="644" y="720" width="236" height="175" fill="#0a0804" stroke="#ff8c00" stroke-width="2"/>
+<rect x="644" y="720" width="236" height="23" fill="#141000"/>
+<text x="762" y="736" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ff8c00" text-anchor="middle" letter-spacing="2">MARKETING</text>
+
+<text x="654" y="759" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff8c00" font-weight="700">▲ GUINAN</text>
+<text x="654" y="770" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Gina Navarro  ·  Content Creator</text>
+<text x="654" y="783" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff8c00" font-weight="700">▲ CMDR. SELA</text>
+<text x="654" y="794" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Selena Marsh  ·  Growth Hacker</text>
+<text x="654" y="807" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff8c00" font-weight="700">▲ AMB. LWAXANA</text>
+<text x="654" y="818" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Lana Troy  ·  Community Mgr</text>
+<text x="654" y="831" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff8c00" font-weight="700">▲ Q</text>
+<text x="654" y="842" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">  Quinn Archer  ·  Social Media</text>
+<text x="762" y="870" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#ff8c00" text-anchor="middle">TIER B · claude-sonnet</text>
+<text x="762" y="882" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070"   text-anchor="middle">build · execute · create</text>
+
+<!-- isolation note -->
+<text x="450" y="906" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070" text-anchor="middle" letter-spacing="2">EACH AGENT IN ITS OWN HERMES SKILL CONTAINER  ·  ISOLATED BY DEFAULT  ·  NO CONTEXT BLEED  ·  SPIN UP FROM TEMPLATE</text>
+
+<!-- ───── ROW 2: QA · ANALYTICS · LEGAL ───── -->
+
+<!-- QA & TESTING (RED) x=20 w=278 -->
+<rect x="20" y="914" width="278" height="150" fill="#090406" stroke="#ff3366" stroke-width="2"/>
+<rect x="20" y="914" width="278" height="23" fill="#140408"/>
+<text x="159" y="930" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ff3366" text-anchor="middle" letter-spacing="2">QA &amp; TESTING</text>
+
+<text x="30" y="953" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff3366" font-weight="700">▲ CMDR. RIKER  /  Will Riker</text>
+<text x="30" y="964" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Reality Checker · defaults to NEEDS WORK</text>
+<line x1="30" y1="970" x2="288" y2="970" stroke="#ff3366" stroke-width="0.5" opacity="0.25"/>
+
+<text x="30" y="983" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff3366" font-weight="700">▲ DR. CRUSHER  /  Beverly Cross</text>
+<text x="30" y="994" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Tool Evaluator · tech assessment</text>
+<line x1="30" y1="1000" x2="288" y2="1000" stroke="#ff3366" stroke-width="0.5" opacity="0.25"/>
+
+<text x="30" y="1013" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff3366" font-weight="700">▲ GEORDI  /  George Forester</text>
+<text x="30" y="1024" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Workflow Optimizer · process</text>
+
+<text x="159" y="1048" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#ff3366" text-anchor="middle">evidence required · no false passes</text>
+<text x="159" y="1059" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070" text-anchor="middle">inconclusive = NEEDS WORK</text>
+
+<!-- ANALYTICS & FINANCE (BLUE) x=306 w=268 -->
+<rect x="306" y="914" width="268" height="150" fill="#040610" stroke="#3399ff" stroke-width="2"/>
+<rect x="306" y="914" width="268" height="23" fill="#060a18"/>
+<text x="440" y="930" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#3399ff" text-anchor="middle" letter-spacing="1">ANALYTICS &amp; FINANCE</text>
+
+<text x="316" y="953" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#3399ff" font-weight="700">▲ LT. CDR. DAREN  /  Nadine Ellis</text>
+<text x="316" y="964" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Analytics Reporter · dashboards · KPIs</text>
+<line x1="316" y1="970" x2="564" y2="970" stroke="#3399ff" stroke-width="0.5" opacity="0.25"/>
+
+<text x="316" y="983" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#3399ff" font-weight="700">▲ QUARK  /  Corey Quinn</text>
+<text x="316" y="994" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Finance Tracker · budget · cashflow</text>
+
+<text x="440" y="1022" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#3399ff" text-anchor="middle">data → decisions · not vanity metrics</text>
+<text x="440" y="1034" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070" text-anchor="middle">lead with the finding, not the method</text>
+<text x="440" y="1058" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#3399ff" text-anchor="middle">TIER C · claude-haiku</text>
+
+<!-- LEGAL & COMPLIANCE (GREEN) x=582 w=298 -->
+<rect x="582" y="914" width="298" height="150" fill="#040806" stroke="#33cc66" stroke-width="2"/>
+<rect x="582" y="914" width="298" height="23" fill="#060e08"/>
+<text x="731" y="930" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#33cc66" text-anchor="middle" letter-spacing="1">LEGAL &amp; COMPLIANCE</text>
+
+<text x="592" y="953" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#33cc66" font-weight="700">▲ ADM. BRAND  /  Brenda Marks</text>
+<text x="592" y="964" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Compliance Checker · multi-jurisdiction</text>
+<line x1="592" y1="970" x2="870" y2="970" stroke="#33cc66" stroke-width="0.5" opacity="0.25"/>
+
+<text x="592" y="983" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#33cc66" font-weight="700">▲ CDR. LOUVOIS  /  legal review</text>
+<text x="592" y="994" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#8090a0">  Contract Reviewer · NDA triage</text>
+
+<text x="731" y="1022" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#33cc66" text-anchor="middle">BLOCKED → HIGH → MED → LOW → CLEAR</text>
+<text x="731" y="1034" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070" text-anchor="middle">blocks problems before they become lawsuits</text>
+<text x="731" y="1058" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#33cc66" text-anchor="middle">TIER A · mandatory gate review</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  GATE SYSTEM  y=1086-1218                  -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="20" y1="1082" x2="880" y2="1082" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+<text x="22" y="1097" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" letter-spacing="3">GATE SYSTEM — MISSION INTEGRITY PROTOCOL — NO GATE IS OPTIONAL</text>
+<line x1="20" y1="1101" x2="880" y2="1101" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+
+<!-- Gate 0: SCOPE -->
+<rect x="20"  y="1109" width="162" height="90" fill="#050e1a" stroke="#7090a0" stroke-width="1.5"/>
+<rect x="20"  y="1109" width="162" height="23" fill="#0a1020"/>
+<text x="101" y="1126" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#7090a0" text-anchor="middle" letter-spacing="2">GATE 0</text>
+<text x="101" y="1144" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">SCOPE</text>
+<text x="101" y="1161" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">objective defined</text>
+<text x="101" y="1173" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">constraints listed</text>
+<text x="101" y="1185" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">done criteria set</text>
+<!-- arrow -->
+<line x1="182" y1="1154" x2="196" y2="1154" stroke="#00e5cc" stroke-width="2" marker-end="url(#aT)"/>
+
+<!-- Gate 1: PLAN -->
+<rect x="197" y="1109" width="162" height="90" fill="#050e1a" stroke="#3399ff" stroke-width="1.5"/>
+<rect x="197" y="1109" width="162" height="23" fill="#06101c"/>
+<text x="278" y="1126" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#3399ff" text-anchor="middle" letter-spacing="2">GATE 1</text>
+<text x="278" y="1144" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">PLAN</text>
+<text x="278" y="1161" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">tasks sequenced</text>
+<text x="278" y="1173" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">owners assigned</text>
+<text x="278" y="1185" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">model tiers set</text>
+<line x1="359" y1="1154" x2="373" y2="1154" stroke="#00e5cc" stroke-width="2" marker-end="url(#aT)"/>
+
+<!-- Gate 2: BUILD -->
+<rect x="374" y="1109" width="162" height="90" fill="#050e0a" stroke="#ffd700" stroke-width="1.5"/>
+<rect x="374" y="1109" width="162" height="23" fill="#0c1000"/>
+<text x="455" y="1126" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="2">GATE 2</text>
+<text x="455" y="1144" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">BUILD</text>
+<text x="455" y="1161" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">dev–QA loop</text>
+<text x="455" y="1173" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">per-task validation</text>
+<text x="455" y="1185" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">max 3 retries</text>
+<line x1="536" y1="1154" x2="550" y2="1154" stroke="#00e5cc" stroke-width="2" marker-end="url(#aT)"/>
+
+<!-- Gate 3: VERIFY (highlighted) -->
+<rect x="551" y="1105" width="162" height="98" fill="#0a0604" stroke="#ff8c00" stroke-width="3" filter="url(#gS)"/>
+<rect x="551" y="1105" width="162" height="23" fill="#100800"/>
+<text x="632" y="1122" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#ff8c00" text-anchor="middle" letter-spacing="2">GATE 3</text>
+<text x="632" y="1140" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">VERIFY</text>
+<text x="632" y="1157" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#8090a0" text-anchor="middle">QA with evidence</text>
+<text x="632" y="1169" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#8090a0" text-anchor="middle">security + legal</text>
+<text x="632" y="1181" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#ff8c00" text-anchor="middle">no false passes</text>
+<text x="632" y="1195" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070" text-anchor="middle">Riker defaults: NEEDS WORK</text>
+<line x1="713" y1="1154" x2="727" y2="1154" stroke="#00e5cc" stroke-width="2" marker-end="url(#aT)"/>
+
+<!-- Gate 4: RELEASE (green, final) -->
+<rect x="728" y="1109" width="152" height="90" fill="#040a04" stroke="#33cc66" stroke-width="2.5" filter="url(#gS)"/>
+<rect x="728" y="1109" width="152" height="23" fill="#060e06"/>
+<text x="804" y="1126" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#33cc66" text-anchor="middle" letter-spacing="2">GATE 4</text>
+<text x="804" y="1144" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">RELEASE</text>
+<text x="804" y="1161" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">rollout plan</text>
+<text x="804" y="1173" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">rollback plan</text>
+<text x="804" y="1185" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#33cc66" text-anchor="middle">human signoff ✓</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  STORAGE SPLIT  y=1222-1408                -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="20" y1="1222" x2="880" y2="1222" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+<text x="22" y="1238" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" letter-spacing="3">STORAGE SPLIT — BRAIN  (config)  vs  BODY  (runtime)</text>
+<line x1="20" y1="1242" x2="880" y2="1242" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+
+<!-- Hermes Runtime (left) -->
+<rect x="20"  y="1250" width="420" height="150" fill="#040e1a" stroke="#00e5cc" stroke-width="1.5"/>
+<rect x="20"  y="1250" width="420" height="23"  fill="#051520"/>
+<text x="230" y="1267" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="2">HERMES RUNTIME  —  ~/.hermes/</text>
+
+<text x="35"  y="1288" font-family="'Courier New',Courier,monospace" font-size="9" fill="#ffd700">SOUL.md</text>
+<text x="140" y="1288" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">captain persona · voice · principles</text>
+<text x="35"  y="1303" font-family="'Courier New',Courier,monospace" font-size="9" fill="#00e5cc">config.yaml</text>
+<text x="140" y="1303" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">model · delegation · memory · TTS</text>
+<text x="35"  y="1318" font-family="'Courier New',Courier,monospace" font-size="9" fill="#00e5cc">skills/crew/*/</text>
+<text x="140" y="1318" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">all 30+ crew SKILL.mds</text>
+<text x="35"  y="1333" font-family="'Courier New',Courier,monospace" font-size="9" fill="#00e5cc">memories/</text>
+<text x="140" y="1333" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">persistent memory across sessions</text>
+<text x="35"  y="1348" font-family="'Courier New',Courier,monospace" font-size="9" fill="#00e5cc">cron/</text>
+<text x="140" y="1348" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">scheduled jobs · autonomous runs</text>
+<text x="35"  y="1363" font-family="'Courier New',Courier,monospace" font-size="9" fill="#00e5cc">state.db</text>
+<text x="140" y="1363" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">live agent state · context window</text>
+<text x="230" y="1388" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#00e5cc"   text-anchor="middle" font-style="italic">body — memory + execution live here</text>
+
+<!-- Claude Code Agents (right) -->
+<rect x="460" y="1250" width="420" height="150" fill="#08061a" stroke="#cc66ff" stroke-width="1.5"/>
+<rect x="460" y="1250" width="420" height="23"  fill="#0c0820"/>
+<text x="670" y="1267" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#cc66ff" text-anchor="middle" letter-spacing="1">CLAUDE CODE  —  .claude/agents/</text>
+
+<text x="475" y="1288" font-family="'Courier New',Courier,monospace" font-size="9" fill="#cc66ff">orchestrator.md</text>
+<text x="600" y="1288" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">ADM. Nechayev · pipeline mgr</text>
+<text x="475" y="1303" font-family="'Courier New',Courier,monospace" font-size="9" fill="#cc66ff">engineering/*.md</text>
+<text x="600" y="1303" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">7 engineering specialists</text>
+<text x="475" y="1318" font-family="'Courier New',Courier,monospace" font-size="9" fill="#cc66ff">design/*.md</text>
+<text x="600" y="1318" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">UX Arch · UI Design · Research</text>
+<text x="475" y="1333" font-family="'Courier New',Courier,monospace" font-size="9" fill="#cc66ff">marketing/*.md</text>
+<text x="600" y="1333" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">Content · Growth · Community</text>
+<text x="475" y="1348" font-family="'Courier New',Courier,monospace" font-size="9" fill="#cc66ff">qa/ · support/ · legal/</text>
+<text x="600" y="1348" font-family="'Courier New',Courier,monospace" font-size="8" fill="#506070">Reality Checker · Analytics · Brand</text>
+<text x="670" y="1380" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#cc66ff" text-anchor="middle" font-style="italic">description field = routing intent = who gets the task</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  4 LEVELS + MODEL TIERING  y=1418-1622     -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="20" y1="1418" x2="880" y2="1418" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+
+<!-- 4 LEVELS (left) -->
+<rect x="20"  y="1426" width="420" height="188" fill="#040e1a" stroke="#ffd700" stroke-width="1.5"/>
+<rect x="20"  y="1426" width="420" height="23"  fill="#0e1200"/>
+<text x="230" y="1443" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="2">THE 4 LEVELS</text>
+
+<!-- L1 -->
+<rect x="30" y="1454" width="22" height="22" fill="#ffd700"/>
+<text x="41" y="1469" font-family="'Courier New',Courier,monospace" font-size="11" font-weight="700" fill="#000" text-anchor="middle">1</text>
+<text x="60" y="1462" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#ffd700">SOUL + CONFIG</text>
+<text x="60" y="1474" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">Picard persona · config.yaml · initial setup</text>
+<!-- L2 -->
+<rect x="30" y="1484" width="22" height="22" fill="#00e5cc"/>
+<text x="41" y="1499" font-family="'Courier New',Courier,monospace" font-size="11" font-weight="700" fill="#000" text-anchor="middle">2</text>
+<text x="60" y="1492" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#00e5cc">DIRECT CREW ACCESS</text>
+<text x="60" y="1504" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">Talk to specialists directly · no routing</text>
+<!-- L3 -->
+<rect x="30" y="1514" width="22" height="22" fill="#cc66ff"/>
+<text x="41" y="1529" font-family="'Courier New',Courier,monospace" font-size="11" font-weight="700" fill="#000" text-anchor="middle">3</text>
+<text x="60" y="1522" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#cc66ff">ORCHESTRATOR + CREW</text>
+<text x="60" y="1534" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">Nechayev routes · gates enforced · results synth.</text>
+<!-- L4 -->
+<rect x="30" y="1544" width="22" height="22" fill="#ff3366"/>
+<text x="41" y="1559" font-family="'Courier New',Courier,monospace" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="60" y="1552" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#ff3366">AUTONOMOUS FLEET</text>
+<text x="60" y="1564" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070">Crons · audits · backups · self-running agents</text>
+
+<text x="230" y="1594" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#ffd700" text-anchor="middle">start at level 1  ·  engage at level 4</text>
+<text x="230" y="1606" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#506070" text-anchor="middle">minimum crew: orchestrator + pm + 1 specialist + qa</text>
+
+<!-- MODEL TIERING (right) -->
+<rect x="460" y="1426" width="420" height="188" fill="#040e1a" stroke="#00e5cc" stroke-width="1.5"/>
+<rect x="460" y="1426" width="420" height="23"  fill="#051420"/>
+<text x="670" y="1443" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="2">MODEL TIERING</text>
+
+<!-- Tier A -->
+<rect x="470" y="1454" width="400" height="50" fill="#0a0804" stroke="#ff8c00" stroke-width="1.5"/>
+<text x="482" y="1470" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#ff8c00">TIER A — STRATEGIC</text>
+<text x="482" y="1484" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#8090a0">orchestrator · legal · architecture · security · high stakes</text>
+<text x="482" y="1497" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">→ claude-opus  /  most capable · best reasoning</text>
+<!-- Tier B -->
+<rect x="470" y="1510" width="400" height="50" fill="#0a0a04" stroke="#ffd700" stroke-width="1.5"/>
+<text x="482" y="1526" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#ffd700">TIER B — BUILD</text>
+<text x="482" y="1540" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#8090a0">engineering · QA analysis · data pipelines · skilled work</text>
+<text x="482" y="1553" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">→ claude-sonnet  /  balanced · capable · fast</text>
+<!-- Tier C -->
+<rect x="470" y="1566" width="400" height="40" fill="#040a0e" stroke="#00e5cc" stroke-width="1"/>
+<text x="482" y="1582" font-family="'Courier New',Courier,monospace" font-size="9"  font-weight="700" fill="#00e5cc">TIER C — EXECUTION</text>
+<text x="482" y="1595" font-family="'Courier New',Courier,monospace" font-size="7.5" fill="#8090a0">research sweeps · first drafts · support · high-volume tasks</text>
+<text x="482" y="1606" font-family="'Courier New',Courier,monospace" font-size="7"  fill="#506070">→ claude-haiku  /  fast · efficient · cost-effective</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  THE STACK  y=1632-1750                    -->
+<!-- ═══════════════════════════════════════════ -->
+<line x1="20" y1="1632" x2="880" y2="1632" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+<text x="22"  y="1648" font-family="'Courier New',Courier,monospace" font-size="9" fill="#7090a0" letter-spacing="3">THE STACK — ONE CONNECTED SYSTEM  ·  YOUR CONTEXT  ·  YOUR RULES</text>
+<line x1="20" y1="1652" x2="880" y2="1652" stroke="#00e5cc" stroke-width="0.5" opacity="0.3"/>
+
+<!-- Claude Code -->
+<rect x="20"  y="1660" width="195" height="68" fill="#050a1a" stroke="#7f52ff" stroke-width="2"/>
+<text x="117" y="1680" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#7f52ff" text-anchor="middle" letter-spacing="2">CLAUDE CODE</text>
+<text x="117" y="1695" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">.claude/agents/*.md</text>
+<text x="117" y="1708" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">routing · persona · tools</text>
+<text x="222" y="1698" font-family="'Courier New',Courier,monospace" font-size="16" fill="#00e5cc" text-anchor="middle">+</text>
+
+<!-- Hermes Agent -->
+<rect x="235" y="1660" width="195" height="68" fill="#040e16" stroke="#00e5cc" stroke-width="2"/>
+<text x="332" y="1680" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="2">HERMES AGENT</text>
+<text x="332" y="1695" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">~/.hermes/skills/</text>
+<text x="332" y="1708" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">memory · cron · delegation</text>
+<text x="438" y="1698" font-family="'Courier New',Courier,monospace" font-size="16" fill="#00e5cc" text-anchor="middle">+</text>
+
+<!-- MCP Servers -->
+<rect x="450" y="1660" width="195" height="68" fill="#060a0c" stroke="#ff8c00" stroke-width="2"/>
+<text x="547" y="1680" font-family="'Courier New',Courier,monospace" font-size="10" font-weight="700" fill="#ff8c00" text-anchor="middle" letter-spacing="2">MCP SERVERS</text>
+<text x="547" y="1695" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">gmail · calendar · cloudflare</text>
+<text x="547" y="1708" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="middle">notion · ifttt · drive</text>
+<text x="653" y="1698" font-family="'Courier New',Courier,monospace" font-size="16" fill="#00e5cc" text-anchor="middle">=</text>
+
+<!-- STARFLEET result -->
+<rect x="665" y="1656" width="215" height="76" fill="#080e20" stroke="#ffd700" stroke-width="3" filter="url(#gS)"/>
+<text x="772" y="1676" font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700" fill="#ffd700" text-anchor="middle" letter-spacing="3">STARFLEET</text>
+<text x="772" y="1693" font-family="'Courier New',Courier,monospace" font-size="9"  fill="#aabbcc" text-anchor="middle">fully crewed  ·  mission-ready</text>
+<text x="772" y="1707" font-family="'Courier New',Courier,monospace" font-size="9"  fill="#aabbcc" text-anchor="middle">gates enforced  ·  personas locked</text>
+<text x="772" y="1723" font-family="'Courier New',Courier,monospace" font-size="9"  fill="#ffd700" text-anchor="middle" letter-spacing="3">ENGAGE</text>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  FOOTER  y=1752-1820                       -->
+<!-- ═══════════════════════════════════════════ -->
+<rect y="1752" width="900" height="68" fill="#040e20"/>
+<rect y="1752" width="900" height="1.5" fill="#00e5cc" opacity="0.5"/>
+<text x="450" y="1779" font-family="'Courier New',Courier,monospace" font-size="12" font-weight="700" fill="#00e5cc" text-anchor="middle" letter-spacing="4">BUILD AGENTS LIKE DEPARTMENTS  |  SCALE LIKE INFRASTRUCTURE</text>
+<text x="450" y="1800" font-family="'Courier New',Courier,monospace" font-size="9"  fill="#7090a0" text-anchor="middle" letter-spacing="2">You are in control. Build the system. Own your agents.</text>
+<text x="878" y="1815" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070" text-anchor="end">v1.0.0</text>
+<text x="22"  y="1815" font-family="'Courier New',Courier,monospace" font-size="8"  fill="#506070">@koba42</text>
+
+</svg>
